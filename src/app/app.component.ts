@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  page = 'recipes';
+
+  pageChanged(pageEvt) {
+    console.log(pageEvt);
+    this.page = pageEvt;
+  }
 }
